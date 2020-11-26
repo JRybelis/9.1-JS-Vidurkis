@@ -1,1 +1,0 @@
-// pagrindinė kviečiama funkcija

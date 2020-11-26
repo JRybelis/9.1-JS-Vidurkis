@@ -10,7 +10,7 @@ function numberAmount (numberArray) {
 
     for (let i = 0; i < numberArray.length; i++) {
         const number = numberArray[i];
-        if (typeof number !== 'number') {
+        if (typeof number !== "number" || number === "NaN" || number === "Infinity" || number === "-Infinity") {
             continue;
         }
         amount++;
@@ -22,3 +22,5 @@ function numberAmount (numberArray) {
 
     return amount;
 }
+
+export { numberAmount }

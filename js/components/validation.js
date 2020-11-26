@@ -22,6 +22,7 @@ function isNumberProper(number, assessedObjectName) {
     if (!isFinite(number)) {
         console.error(`ERROR: submitted ${assessedObjectName} is not a proper number.`);
         return false;
+        
     }
     return true;
 }
