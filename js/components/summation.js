@@ -13,10 +13,13 @@ function arraySum (numberArray) {
     for (let i = 0; i < numberArray.length; i++) {
         const number = numberArray[i];
 
-        if (typeof number !== 'number') {
-            console.warn ("WARNING: number array does not contain any integer type values.")
+        if (!isNumberProper(number, 'number')) {
             continue;
         }
+        // if (typeof number !== 'number') {
+        //     console.warn ("WARNING: number array does not contain any integer type values.")
+        //     continue;
+        // }
         
         sum += number;
     }

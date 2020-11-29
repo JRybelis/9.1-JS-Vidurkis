@@ -10,10 +10,9 @@ function numberAmount (numberArray) {
 
     for (let i = 0; i < numberArray.length; i++) {
         const number = numberArray[i];
-        if (typeof number !== "number" || number === "NaN" || number === "Infinity" || number === "-Infinity") {
-            continue;
-        }
+        if (isNumberProper (number, 'number')) {
         amount++;
+        }
     }
 
     if (!isNumberProper (amount, "resulting amount of numbers in the array")) {
